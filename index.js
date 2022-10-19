@@ -33,7 +33,3 @@ console.log(hasBalanced("Hey...there are no parens here!"))
 console.log(hasBalanced(")(Hey...there are no parens here!)("))
 
 //Take in the str and confirm if it starts with and ends with a (  & )
-
-function balanced2 () {
-
-}
