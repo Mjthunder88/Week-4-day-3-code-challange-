@@ -8,7 +8,7 @@ function hasBalanced (str) {
             countR++
         } 
     }
-    if (str.startsWith(')')) {
+    if (str.startsWith(')') || str.endsWith('(')) {
         return false
     }
     if (countR === countL) {
@@ -30,6 +30,7 @@ console.log(hasBalanced(")"))
 console.log(hasBalanced("("))
 console.log(hasBalanced("(This has (too many closes.) ) )"))
 console.log(hasBalanced("Hey...there are no parens here!"))
-console.log(hasBalanced(")(Hey...there are no parens here!)("))
+console.log(hasBalanced("(Hey...there are) no parens)( here!"))
+// the last one comes back as true because it only cheks the end and the beginning if it has a misplacerd ()
 
 //Take in the str and confirm if it starts with and ends with a (  & )
